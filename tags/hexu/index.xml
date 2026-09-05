@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Hexu on 冥王星のBlog</title>
+		<link>http://localhost:1313/tags/hexu/</link>
+		<description>Recent content in Hexu on 冥王星のBlog</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 19 Jan 2022 13:23:41 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/hexu/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>你好，Solitude</title>
+				<link>http://localhost:1313/posts/hello-solitude/</link>
+				<pubDate>Wed, 19 Jan 2022 13:23:41 +0000</pubDate>
+				<guid>http://localhost:1313/posts/hello-solitude/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

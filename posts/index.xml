@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on 冥王星のBlog</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on 冥王星のBlog</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>测试文章</title>
+				<link>http://localhost:1313/posts/test-post/</link>
+				<pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/test-post/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>你好，Solitude</title>
+				<link>http://localhost:1313/posts/hello-solitude/</link>
+				<pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/hello-solitude/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Hexo&#43;Aurora搭建个人博客</title>
+				<link>http://localhost:1313/posts/hexo/</link>
+				<pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/hexo/</guid>
+				<description>&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;大家好，我是冥王星&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;今天给大家带来Hexo+Aurora创建博客的教程&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;前期准备&#34;&gt;前期准备：&lt;/h2&gt;&#xA;&lt;h3 id=&#34;git&#34;&gt;&lt;strong&gt;Git&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;一个控制台，跟cmd差不多，可以用于把博客部署到托管平台上&lt;/li&gt;&#xA;&lt;li&gt;下载地址：&lt;a href=&#34;https://www.git-scm.com/downloads&#34;&gt;https://www.git-scm.com/downloads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;nodejs&#34;&gt;&lt;strong&gt;Nodejs&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hexo是基于Nodejs开发的，博客用它来生成文件&lt;/li&gt;&#xA;&lt;li&gt;下载地址：&lt;a href=&#34;https://nodejs.org/zh-cn/&#34;&gt;https://nodejs.org/zh-cn/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;环境搭建&#34;&gt;环境搭建：&lt;/h2&gt;&#xA;&lt;p&gt;首先，分别安装Git和Nodejs，基本每一步的直接点击跳过即可&lt;/p&gt;&#xA;&lt;p&gt;安装完成后Win+R输入cmd进入命令控制台，输入以下命令,来检查Nodejs是否安装成功：&lt;/p&gt;&#xA;&lt;figure class=&#34;code-block&#34; data-code-block data-language=&#34;bash&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;code-block__toolbar&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;code-block__language&#34;&gt;bash&lt;/span&gt;&#xD;&#xA;      &lt;button class=&#34;code-block__copy&#34; type=&#34;button&#34; data-code-copy&gt;复制&lt;/button&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;div class=&#34;code-block__viewport&#34;&gt;&#xD;&#xA;    &lt;pre class=&#34;code-block__fallback&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;node -v&#xA;npm -v&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;button class=&#34;code-block__expand&#34; type=&#34;button&#34; data-code-expand hidden&gt;展开全部&lt;/button&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;接下来，创建一个Blog文件夹，进入这个文件夹，点击右键使用Git Bash Here,然后输入以下命令：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;code-block&#34; data-code-block data-language=&#34;bash&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;code-block__toolbar&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;code-block__language&#34;&gt;bash&lt;/span&gt;&#xD;&#xA;      &lt;button class=&#34;code-block__copy&#34; type=&#34;button&#34; data-code-copy&gt;复制&lt;/button&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;div class=&#34;code-block__viewport&#34;&gt;&#xD;&#xA;    &lt;pre class=&#34;code-block__fallback&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;npm install -g hexo-cli&#xA;hexo init myblog&#xA;cd myblog&#xA;npm install&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;button class=&#34;code-block__expand&#34; type=&#34;button&#34; data-code-expand hidden&gt;展开全部&lt;/button&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;这个myblog文件夹其实是可以改名字的，不过我为了小白考虑，提供这个一键生成Blog文件的命令&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;如果安装无误的话，你的Blog(myblog)文件夹的结构应该是这样的：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;node_modules: 依赖包&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;public：存放生成的页面&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;scaffolds：生成文章的一些模板&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;source：用来存放你的文章&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;themes：主题&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;_config.yml: 博客的配置文件&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;接下来，在Git Bash界面输入以下命令，打开Hexo自带的服务器：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;code-block&#34; data-code-block data-language=&#34;bash&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;code-block__toolbar&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;code-block__language&#34;&gt;bash&lt;/span&gt;&#xD;&#xA;      &lt;button class=&#34;code-block__copy&#34; type=&#34;button&#34; data-code-copy&gt;复制&lt;/button&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;div class=&#34;code-block__viewport&#34;&gt;&#xD;&#xA;    &lt;pre class=&#34;code-block__fallback&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;hexo g &amp;amp;&amp;amp; hexo s&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;button class=&#34;code-block__expand&#34; type=&#34;button&#34; data-code-expand hidden&gt;展开全部&lt;/button&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;在浏览器输入loaclhost:4000就可以看见自己的Blog了&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;接下来，我们就正式进入Aurora主题的安装教程了，请大家检查一下各个步骤&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;第一步安装主题&#34;&gt;第一步，安装主题&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.Win+R打开cmd,输入以下命令安装Aurora主题&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;code-block&#34; data-code-block data-language=&#34;bash&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;code-block__toolbar&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;code-block__language&#34;&gt;bash&lt;/span&gt;&#xD;&#xA;      &lt;button class=&#34;code-block__copy&#34; type=&#34;button&#34; data-code-copy&gt;复制&lt;/button&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;div class=&#34;code-block__viewport&#34;&gt;&#xD;&#xA;    &lt;pre class=&#34;code-block__fallback&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;npm install hexo-theme-aurora --save&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;button class=&#34;code-block__expand&#34; type=&#34;button&#34; data-code-expand hidden&gt;展开全部&lt;/button&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;安装完成后请检查是否有_confing.yml文件，没有请自行去官方文档复制一份&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
